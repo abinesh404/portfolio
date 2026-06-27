@@ -12,27 +12,27 @@ const navLinks = [
     link: "#skills",
   },
   {
-    name: "Testimonials",
-    link: "#testimonials",
+    name: "Education",
+    link: "#education",
   },
 ];
 
 const words = [
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
+  { text: "Data", imgPath: "/images/designs.svg" },
+  { text: "Insights", imgPath: "/images/ideas.svg" },
+  { text: "Dashboards", imgPath: "/images/concepts.svg" },
   { text: "Code", imgPath: "/images/code.svg" },
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
+  { text: "Data", imgPath: "/images/designs.svg" },
+  { text: "Insights", imgPath: "/images/ideas.svg" },
+  { text: "Dashboards", imgPath: "/images/concepts.svg" },
   { text: "Code", imgPath: "/images/code.svg" },
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 3, suffix: "+", label: "Projects Completed" },
+  { value: 2, suffix: "+", label: "Internships & Roles" },
+  { value: 6, suffix: "+", label: "Tools & Technologies" },
+  { value: 1, suffix: "+", label: "Year of Experience" },
 ];
 
 const logoIconsList = [
@@ -74,41 +74,18 @@ const logoIconsList = [
 const abilities = [
   {
     imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    title: "Data-Driven Solutions",
+    desc: "Transforming complex data into actionable insights using Python, SQL, and Power BI for impactful decision-making.",
   },
   {
     imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    title: "Collaborative Approach",
+    desc: "Working effectively with cross-functional teams to deliver efficient, user-friendly web and data solutions.",
   },
   {
     imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
-  },
-];
-
-const techStackImgs = [
-  {
-    name: "React Developer",
-    imgPath: "/images/logos/react.png",
-  },
-  {
-    name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
-  },
-  {
-    name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
-  },
-  {
-    name: "Interactive Developer",
-    imgPath: "/images/logos/three.png",
-  },
-  {
-    name: "Project Manager",
-    imgPath: "/images/logos/git.svg",
+    title: "Continuous Learning",
+    desc: "Staying updated with modern technologies and best practices to deliver cutting-edge solutions on time.",
   },
 ];
 
@@ -138,48 +115,106 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Project Manager",
+    name: "Git & Version Control",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
   },
 ];
 
+const skillCategories = [
+  {
+    title: "Programming Languages",
+    skills: [
+      { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
+      { name: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" },
+      { name: "SQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" },
+      { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
+    ]
+  },
+  {
+    title: "Data Analysis",
+    skills: [
+      { name: "Excel", icon: "/images/excel.svg" },
+      { name: "Power BI", icon: "/images/powerbi.svg" },
+      { name: "Pandas", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" },
+      { name: "NumPy", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" },
+    ]
+  },
+  {
+    title: "Web Development",
+    skills: [
+      { name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" },
+      { name: "CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" },
+      { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
+      { name: "React.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
+    ]
+  },
+  {
+    title: "Backend Development",
+    skills: [
+      { name: "FastAPI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" },
+      { name: "REST APIs", icon: "/images/data-icon.svg" },
+      { name: "Database Integration", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
+    ]
+  },
+  {
+    title: "Databases",
+    skills: [
+      { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" },
+      { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
+    ]
+  },
+  {
+    title: "Tools & Technologies",
+    skills: [
+      { name: "Visual Studio Code", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" },
+      { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" },
+      { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" },
+      { name: "KNIME", icon: "/images/knime.png" },
+      { name: "MS Office", icon: "/images/office.svg" },
+    ]
+  },
+];
+
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    review:
+      "Abinesh contributes effectively to data analysis and backend development, enhancing application performance through insightful reporting and efficient API integration.",
+    imgPath: "/images/data-icon.svg",
+    logoPath: "/images/data-icon.svg",
+    title: "Junior Associate",
+    date: "January 2026 – Present",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Contributing to data analysis through reporting, visualization, and data processing to support business insights.",
+      "Involved in web application and backend development by supporting frontend implementation and API integration.",
+      "Enhancing application performance and functionality through database operations and optimization.",
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    review:
+      "Abinesh demonstrated strong full-stack skills during his internship, building responsive applications and collaborating effectively with the development team.",
+    imgPath: "/images/stack-icon.svg",
+    logoPath: "/images/stack-icon.svg",
+    title: "Full Stack Development Intern",
+    date: "July 2025 – November 2025",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Worked on responsive web application development using frontend and backend technologies.",
+      "Gained practical experience in API integration, database management, and application development.",
+      "Collaborated with teams to build efficient and user-friendly solutions in a professional environment.",
     ],
   },
   {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    review:
+      "Abinesh showed excellent attention to detail in frontend development, delivering responsive interfaces that improved overall user experience.",
+    imgPath: "/images/ui-icon.svg",
+    logoPath: "/images/ui-icon.svg",
+    title: "Frontend Developer Intern",
+    date: "June 2023 – July 2023",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Developed responsive user interfaces using HTML, CSS, and JavaScript.",
+      "Improved website usability and performance through code optimization.",
+      "Collaborated with team members on frontend enhancements, debugging, and implementing interactive web features.",
     ],
   },
 ];
@@ -201,66 +236,64 @@ const expLogos = [
 
 const testimonials = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
+    name: "Master of Computer Applications (MCA)",
+    mentions: "Hindusthan College of Arts and Science",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-    imgPath: "/images/client1.png",
+      "Focused on data analytics, database management, web technologies, and software engineering with practical exposure to modern development tools and technologies.",
+    imgPath: "/images/person.png",
   },
   {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
+    name: "Bachelor of Computer Applications (BCA)",
+    mentions: "Muthayammal College of Arts and Science",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-    imgPath: "/images/client3.png",
+      "Developed a strong foundation in programming, databases, web technologies, and computer networks through academic coursework and practical projects.",
+    imgPath: "/images/person.png",
   },
   {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
-    review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    imgPath: "/images/client2.png",
+    name: "Full Stack Development Internship",
+    mentions: "Learnlike",
+    imgPath: "/images/gold-star.png",
   },
   {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
-    review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-    imgPath: "/images/client5.png",
+    name: "Oracle Cloud Infrastructure Certified Foundations Associate",
+    mentions: "Oracle",
+    imgPath: "/images/gold-star.png",
   },
   {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
-    review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
-    imgPath: "/images/client4.png",
+    name: "Python Certification",
+    mentions: "GUVI",
+    imgPath: "/images/gold-star.png",
   },
   {
-    name: "Albert Flores",
-    mentions: "@albertflores",
-    review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-    imgPath: "/images/client6.png",
+    name: "Java Programming Fundamentals",
+    mentions: "Infosys Springboard",
+    imgPath: "/images/gold-star.png",
+  },
+  {
+    name: "JavaScript Programming Essentials Bootcamp",
+    mentions: "LetsUpgrade",
+    imgPath: "/images/gold-star.png",
+  },
+  {
+    name: "Python Programming Essentials Bootcamp",
+    mentions: "LetsUpgrade",
+    imgPath: "/images/gold-star.png",
+  },
+  {
+    name: "C++ Programming Essentials Bootcamp",
+    mentions: "LetsUpgrade",
+    imgPath: "/images/gold-star.png",
+  },
+  {
+    name: "Introduction to Data Science using Python Masterclass",
+    mentions: "Scaler",
+    imgPath: "/images/gold-star.png",
   },
 ];
 
 const socialImgs = [
-  {
-    name: "insta",
-    imgPath: "/images/insta.png",
-  },
-  {
-    name: "fb",
-    imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
-  },
-  {
-    name: "linkedin",
-    imgPath: "/images/linkedin.png",
-  },
+  { imgPath: "/images/linkedin.png", link: "https://www.linkedin.com/in/abinesh-sundarapandian" },
+  { imgPath: "/images/github.png", link: "https://github.com/abinesh404" },
 ];
 
 export {
@@ -273,6 +306,6 @@ export {
   testimonials,
   socialImgs,
   techStackIcons,
-  techStackImgs,
+  skillCategories,
   navLinks,
 };

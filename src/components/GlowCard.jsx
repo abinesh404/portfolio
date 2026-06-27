@@ -39,7 +39,14 @@ const GlowCard = ({ card, index, children }) => {
         ))}
       </div>
       <div className="mb-5">
-        <p className="text-white-50 text-lg">{card.review}</p>
+        {card.review && <p className="text-white-50 text-lg">{card.review}</p>}
+        {card.list && (
+          <ul className="text-white-50 text-lg list-disc pl-5 mt-3 flex flex-col gap-2">
+            {card.list.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+        )}
       </div>
       {children}
     </div>
